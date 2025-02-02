@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt'br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Curso de importaçao</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <p>Transforme ideias em sucesso com</p>
+    
+    <h1>Mentor Charama Mário</h1>
+
+    <section>
+        <div class="link">
+            <p>O que você vai aprender neste módulo</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="modulo" onclick="toggleVideos('modulo1')">
+            <h3>MÓDULO 1 - Introdução à Importação</h3>
+        </div>
+        <div class="videos" id="modulo1">
+            <p><a href="Videos/1- Apresentaçao e Definiçao.mp4" target="_blank">Aula 1 - Apresentação e Introdução à Importação(8:08)</a></p>
+            <p><a href="Videos/2- Etapas e Processo de Importaçao.mp4" target="_blank">Aula 2 - Etapas e Processo de Importaçao (11:04)</a></p>
+            <p><a href="Videos/3- Modos de Transporte.mp4" target="_blank">Aula 3 - Modos de Transporte (9:07)</a></p>
+            <p><a href="video4.mp4" target="_blank">Aula 4 - Agentes de Envio e Empresas de Transporte (10:32)</a></p>
+            <p><a href="Videos/4- Estrategia para uma importaçao de sucesso.mp4" target="_blank">Aula 5 - Estrategia para uma importaçao de sucesso (2:21)</a></p>
+        </div>
+
+        <div class="modulo" onclick="toggleVideos('modulo2')">
+            <h3>MÓDULO 2 - AliExpress</h3>
+        </div>
+        <div class="videos" id="modulo2">
+            <p><a href="video5.mp4" target="_blank">Aula 1</a></p>
+            <p><a href="video6.mp4" target="_blank">Aula 2</a></p>
+        </div>
+
+        <div class="modulo" onclick="toggleVideos('alibaba')">
+            <h3>ALIBABA</h3>
+        </div>
+        <div class="videos" id="alibaba">
+            <p><a href="video7.mp4" target="_blank">Aula 1</a></p>
+            <p><a href="video8.mp4" target="_blank">Aula 2</a></p>
+        </div>
+
+        <div class="modulo" onclick="toggleVideos('shein')">
+            <h3>SHEIN</h3>
+        </div>
+        <div class="videos" id="shein">
+            <p><a href="video9.mp4" target="_blank">Aula 1</a></p>
+            <p><a href="video10.mp4" target="_blank">Aula 2</a></p>
+        </div>
+
+
+    <script>
+        function toggleVideos(id) {
+            var element = document.getElementById(id);
+            if (element.style.display === "block") {
+                element.style.display = "none";
+            } else {
+                element.style.display = "block";
+            }
+        }
+    </script>
+    
+</body>
